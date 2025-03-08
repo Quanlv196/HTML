@@ -5,6 +5,7 @@ body {
 
 p {
   margin: 8px 0;
+  line-height: 22px;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
   max-width: 700px;
   margin: auto;
   background: #E0F3FF;
-  padding: 20px 30px;
+  padding: 20px 50px;
 }
 .main_wrapper .header_main {
   display: -webkit-box;
@@ -24,6 +25,18 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main_wrapper .header_main .header_title {
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 0;
 }
 .main_wrapper .header_main .logo img {
   height: 50px;
@@ -37,6 +50,14 @@ a {
 
 .text_bold {
   font-weight: 600;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
 }
 
 .mb-1 {
@@ -96,6 +117,10 @@ a {
   border-radius: 8px;
   font-size: 16px;
 }
+.button_mail.orange {
+  border-radius: 30px;
+  background: #E24222;
+}
 
 .contact_box > a {
   display: -webkit-box;
@@ -139,4 +164,151 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+}
+
+.main_app.center_bg:before {
+  content: url(https://biletlearn.com/img/website/logo_bg.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.2);
+          transform: translate(-50%, -50%) scale(0.2);
+}
+
+.mail_content,
+.footer_main,
+.header_main {
+  position: relative;
+  z-index: 1;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button_mail_gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 45, 190)), to(rgb(0, 145, 224)));
+  background: linear-gradient(to right, rgb(0, 45, 190), rgb(0, 145, 224));
+  border-radius: 22px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.text_white {
+  color: #fff;
+}
+
+.bilet_intro .item {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bilet_intro .item:last-child {
+  margin-bottom: 0;
+}
+.bilet_intro .item .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+}
+.bilet_intro .item .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  padding-left: 15px;
+}
+.bilet_intro .item .text h3 {
+  margin: 0;
+}
+.bilet_intro .item .text p {
+  margin-bottom: 0;
+}
+
+.bilet_download {
+  background: #00387B;
+  padding: 30px 0;
+}
+.bilet_download h3 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.bilet_package .item {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bilet_package .item:last-child {
+  margin-bottom: 0;
+}
+.bilet_package .item .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bilet_package .item .icon img {
+  width: 100%;
+  aspect-ratio: 9/4;
+}
+.bilet_package .item .icon .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.bilet_package .item .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  padding-left: 15px;
+}
+.bilet_package .item .text h3 {
+  margin: 0;
+}
+.bilet_package .item .text p {
+  margin-bottom: 0;
 }
